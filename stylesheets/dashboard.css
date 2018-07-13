@@ -1,0 +1,99 @@
+.server-icon {
+	background-color: #2f3136;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.server-icon-big {
+	background-color: #2f3136;
+	font-size: 36pt;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.server-icon-big::after {
+	content: "";
+  	display: block;
+  	padding-bottom: 100%;
+}
+
+.server-icon-big .in {
+	position: absolute;
+}
+
+.img-thumbnail {
+	padding: 0;
+	border-width: 0.25rem;
+}
+
+.box-text {
+	position: relative;
+	font-size: 12px;
+	font-weight: 400;
+	bottom: 12px;
+	text-align: center;
+	width: 100%;
+}
+
+.btn .icon {
+	display: inline;
+	font-size: 12pt;
+}
+
+.btn.fab {
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	padding: 0;
+}
+
+.btn.fab .icon {
+	line-height: 38px;
+}
+
+.btn.fab.dropdown-toggle::before, .btn.fab.dropdown-toggle::after {
+	content: none;
+}
+
+.box {
+	margin: 0rem 0.5rem 0 0.5rem;;
+	width: 84px;
+	height: 44px;
+	border-radius: 3px;
+	border: 1px solid;
+	border-bottom-width: 3px;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.box.level {
+	background-color: rgba(33,150,243,1);
+	border-color: rgba(16, 75, 121, 0.5);
+}
+
+.box.money {
+	font-size: 18px;
+	line-height: 22px;
+	background-color: rgba(0,150,136,1);
+	border-color: rgba(0, 75, 68, 0.5);
+}
+
+.box.money .box-text {
+	bottom: 3px;
+}
+
+.theme-hover {
+	transition: opacity ease-out 200ms;
+}
+
+.theme-hover:hover {
+	opacity: 0.7;
+}
