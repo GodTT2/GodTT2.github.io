@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from kyokobot.moe/commands by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 13 Jul 2018 14:00:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Kyoko - Multipurpose Discord Bot</title>
+		<link href="../fonts.googleapis.com/cssaf24.css" rel="stylesheet">
+		<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<link rel="stylesheet" href="stylesheets/cookiealert.css">
+		<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link href="../cdn.jsdelivr.net/npm/dripicons%402.0.0/webfont/webfont.css" rel="stylesheet">
+	</head>
+	<body class="bg-dark text-white">
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ky-navbar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">Kyoko</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="commands.html">Commands</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../external.html?link=https://discord.gg/ZvDRQf7">Discord Server</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../external.html?link=https://github.com/KyokoBot">GitHub</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="btn btn-outline-success my-2 my-sm-0" href="../external.html?link=https://discordapp.com/api/oauth2/authorize?response_type=code&amp;redirect_uri=https%3A%2F%2Fkyokobot.moe%2Fauthorize&amp;scope=identify%20guilds&amp;client_id=375750637540868107">Dashboard</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+<div class="container">
+<div class="mt-4"></div>
+
+<h1 class="display-4">Commands</h1>
+<p>Commands can be invoked in 2 ways: by mentioning the bot and then writing command label and arguments eg. <code>@Kyoko#6125 say something</code> or by prefixing with <code>ky!</code> or one of custom prefixes set by guild owner (check out <code>prefix</code> command).</p>
+<p>You can always list all commands by typing <code>ky!help</code> in chat, or if you want to see it's usage and description - type <code>ky!help [command label]</code> eg. <code>ky!help play</code></p>
+
+<p>If you want to ask us something - <a href="../external.html?link=https://discord.gg/ZvDRQf7">join Kyoko's Discord server</a></p>
+
+<h2>Basic commands</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>userinfo</td>
+					<td>(none)</td>
+					<td>Displays information about user.</td>
+					<td><code>ky!userinfo [user]</code></td>
+				</tr>
+				<tr>
+					<td>ping</td>
+					<td>(none)</td>
+					<td>Checks bot latency.</td>
+					<td><code>ky!ping </code></td>
+				</tr>
+				<tr>
+					<td>help</td>
+					<td>(none)</td>
+					<td>Displays command listing or usage, description and aliases.</td>
+					<td><code>ky!help </code></td>
+				</tr>
+				<tr>
+					<td>language</td>
+					<td>locale, lang</td>
+					<td>Change your language.</td>
+					<td><code>ky!language [language]</code></td>
+				</tr>
+				<tr>
+					<td>invite</td>
+					<td>(none)</td>
+					<td>Invite Kyoko to your server!</td>
+					<td><code>ky!invite </code></td>
+				</tr>
+				<tr>
+					<td>serverinfo</td>
+					<td>(none)</td>
+					<td>Prints full information about current guild.</td>
+					<td><code>ky!serverinfo </code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<h2>Fun</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>whatthecommit</td>
+					<td>wtc, commit</td>
+					<td>Generate random commit message. (source: <a href="../external.html?link=https://github.com/ngerakines/commitment">https://github.com/ngerakines/commitment</a>)</td>
+					<td><code>ky!whatthecommit </code></td>
+				</tr>
+				<tr>
+					<td>snipe</td>
+					<td>(none)</td>
+					<td>Deletesn't the message.</td>
+					<td><code>ky!snipe </code></td>
+				</tr>
+				<tr>
+					<td>owoify</td>
+					<td>owo</td>
+					<td>OwOifies text.</td>
+					<td><code>ky!owoify [text]</code></td>
+				</tr>
+				<tr>
+					<td>lenny</td>
+					<td>(none)</td>
+					<td>( ͡° ͜ʖ ͡°)</td>
+					<td><code>ky!lenny </code></td>
+				</tr>
+				<tr>
+					<td>tableflip</td>
+					<td>(none)</td>
+					<td> (╯°□°）╯︵ ┻━┻</td>
+					<td><code>ky!tableflip </code></td>
+				</tr>
+				<tr>
+					<td>avatar</td>
+					<td>(none)</td>
+					<td>Steal someone's avatar.</td>
+					<td><code>ky!avatar [user]</code></td>
+				</tr>
+				<tr>
+					<td>why</td>
+					<td>huh, hmm</td>
+					<td>Why?</td>
+					<td><code>ky!why why.usage</code></td>
+				</tr>
+				<tr>
+					<td>shrug</td>
+					<td>(none)</td>
+					<td>¯\_(ツ)_/¯</td>
+					<td><code>ky!shrug </code></td>
+				</tr>
+				<tr>
+					<td>say</td>
+					<td>(none)</td>
+					<td>Impersonate Kyoko.</td>
+					<td><code>ky!say [text]</code></td>
+				</tr>
+				<tr>
+					<td>emoji</td>
+					<td>(none)</td>
+					<td>Display info about emoji.</td>
+					<td><code>ky!emoji <emoji></code></td>
+				</tr>
+				<tr>
+					<td>snowflake</td>
+					<td>(none)</td>
+					<td>Decodes Discord snowflake ID. Look here for more info: <a href="../external.html?link=https://discordapp.com/developers/docs/reference#snowflakes">https://discordapp.com/developers/docs/reference#snowflakes</a></td>
+					<td><code>ky!snowflake <snowflake></code></td>
+				</tr>
+				<tr>
+					<td>banana</td>
+					<td>banan, mujbanan, tvujbanan</td>
+					<td>Measure length of yours or someone else's banana.</td>
+					<td><code>ky!banana [user]</code></td>
+				</tr>
+				<tr>
+					<td>inspire</td>
+					<td>(none)</td>
+					<td>Inspire... yourself (powered by inspirobot.me)</td>
+					<td><code>ky!inspire </code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<h2>Moderation</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>settings</td>
+					<td>(none)</td>
+					<td>Configure guild settings.</td>
+					<td><code>ky!settings </code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<h2>Social</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>profile</td>
+					<td>(none)</td>
+					<td>Check your or someone else's profile card.</td>
+					<td><code>ky!profile [user]</code></td>
+				</tr>
+				<tr>
+					<td>richest</td>
+					<td>topmoney, topcash</td>
+					<td>Displays top 10 users with highest balance.</td>
+					<td><code>ky!richest </code></td>
+				</tr>
+				<tr>
+					<td>sendmoney</td>
+					<td>(none)</td>
+					<td>Send some money to given user.</td>
+					<td><code>ky!sendmoney <amount> <user></code></td>
+				</tr>
+				<tr>
+					<td>claim</td>
+					<td>dailies</td>
+					<td>Claim your daily reward or give it to someone else.</td>
+					<td><code>ky!claim [user]</code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<h2>Music</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>stop</td>
+					<td>(none)</td>
+					<td>Stops music playback and clears queue.</td>
+					<td><code>ky!stop </code></td>
+				</tr>
+				<tr>
+					<td>resume</td>
+					<td>(none)</td>
+					<td>Resumes track if it got paused.</td>
+					<td><code>ky!resume </code></td>
+				</tr>
+				<tr>
+					<td>skip</td>
+					<td>>>, forceskip</td>
+					<td>Skips currently playing song.</td>
+					<td><code>ky!skip [track number]</code></td>
+				</tr>
+				<tr>
+					<td>repeat</td>
+					<td>(none)</td>
+					<td>Toggles current song repeating.</td>
+					<td><code>ky!repeat </code></td>
+				</tr>
+				<tr>
+					<td>list</td>
+					<td>queue, q</td>
+					<td>Displays song queue.</td>
+					<td><code>ky!list [page]</code></td>
+				</tr>
+				<tr>
+					<td>pause</td>
+					<td>(none)</td>
+					<td>Pauses currently playing song.</td>
+					<td><code>ky!pause </code></td>
+				</tr>
+				<tr>
+					<td>karaoke</td>
+					<td>(none)</td>
+					<td>Toggles karaoke mode.</td>
+					<td><code>ky!karaoke </code></td>
+				</tr>
+				<tr>
+					<td>nightcore</td>
+					<td>(none)</td>
+					<td>Toggles nightcore mode.</td>
+					<td><code>ky!nightcore </code></td>
+				</tr>
+				<tr>
+					<td>play</td>
+					<td>>, p</td>
+					<td>Plays track from given URL, attachment or search result.</td>
+					<td><code>ky!play [search query or URL]</code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<h2>Images</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>coffee</td>
+					<td>(none)</td>
+					<td>Sends a lovely coffee photo.</td>
+					<td><code>ky!coffee coffee.usage</code></td>
+				</tr>
+				<tr>
+					<td>awoo</td>
+					<td>(none)</td>
+					<td>Awooo</td>
+					<td><code>ky!awoo </code></td>
+				</tr>
+				<tr>
+					<td>pat</td>
+					<td>(none)</td>
+					<td>Pats someone</td>
+					<td><code>ky!pat [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>cry</td>
+					<td>(none)</td>
+					<td>;_;</td>
+					<td><code>ky!cry </code></td>
+				</tr>
+				<tr>
+					<td>jojo</td>
+					<td>(none)</td>
+					<td>JoJo</td>
+					<td><code>ky!jojo </code></td>
+				</tr>
+				<tr>
+					<td>blush</td>
+					<td>(none)</td>
+					<td>Blush</td>
+					<td><code>ky!blush </code></td>
+				</tr>
+				<tr>
+					<td>discordmeme</td>
+					<td>(none)</td>
+					<td>Discord memes</td>
+					<td><code>ky!discordmeme </code></td>
+				</tr>
+				<tr>
+					<td>slap</td>
+					<td>(none)</td>
+					<td>Slaps someone</td>
+					<td><code>ky!slap [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>dance</td>
+					<td>(none)</td>
+					<td>Dance</td>
+					<td><code>ky!dance </code></td>
+				</tr>
+				<tr>
+					<td>tickle</td>
+					<td>(none)</td>
+					<td>Tickles someone</td>
+					<td><code>ky!tickle [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>kiss</td>
+					<td>(none)</td>
+					<td>Kisses someone</td>
+					<td><code>ky!kiss [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>lick</td>
+					<td>(none)</td>
+					<td>Licks someone</td>
+					<td><code>ky!lick [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>clagwimoth</td>
+					<td>(none)</td>
+					<td>Clagwimoth</td>
+					<td><code>ky!clagwimoth </code></td>
+				</tr>
+				<tr>
+					<td>punch</td>
+					<td>(none)</td>
+					<td>Punches someone</td>
+					<td><code>ky!punch [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>lewd</td>
+					<td>(none)</td>
+					<td>Lewd</td>
+					<td><code>ky!lewd </code></td>
+				</tr>
+				<tr>
+					<td>initiald</td>
+					<td>(none)</td>
+					<td>Initial D</td>
+					<td><code>ky!initiald </code></td>
+				</tr>
+				<tr>
+					<td>hug</td>
+					<td>(none)</td>
+					<td>Hugs someone</td>
+					<td><code>ky!hug [user(s)]</code></td>
+				</tr>
+				<tr>
+					<td>kemonomimi</td>
+					<td>(none)</td>
+					<td>Kemonomimi</td>
+					<td><code>ky!kemonomimi </code></td>
+				</tr>
+				<tr>
+					<td>megumin</td>
+					<td>(none)</td>
+					<td>Megumin</td>
+					<td><code>ky!megumin </code></td>
+				</tr>
+				<tr>
+					<td>weebsh</td>
+					<td>weeb</td>
+					<td>Get images from Weeb Services.</td>
+					<td><code>ky!weebsh [type]</code></td>
+				</tr>
+				<tr>
+					<td>cat</td>
+					<td>(none)</td>
+					<td>Cat</td>
+					<td><code>ky!cat </code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<h2>NSFW</h2>
+
+	<div class="table-responsive-md">
+		<table class="table table-dark">
+			<thead>
+				<tr>
+					<th style="width: 25%" scope="col">Command</th>
+					<th style="width: 25%" scope="col">Aliases</th>
+					<th style="width: 25%" scope="col">Description</th>
+					<th style="width: 25%" scope="col">Usage</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>trap</td>
+					<td>(none)</td>
+					<td>Sends some trap boys.</td>
+					<td><code>ky!trap </code></td>
+				</tr>
+				<tr>
+					<td>lewdneko</td>
+					<td>(none)</td>
+					<td>Sends a lewd anime catgirl.</td>
+					<td><code>ky!lewdneko </code></td>
+				</tr>
+				<tr>
+					<td>boobs</td>
+					<td>boobies, tits</td>
+					<td>Shows you some ( . Y . )</td>
+					<td><code>ky!boobs </code></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+		<div class="alert alert-dismissible text-center cookiealert" role="alert">
+			<div class="cookiealert-container">
+				We use cookies to ensure you get the best experience on our website. <a href="../external.html?link=http://cookiesandyou.com/" target="_blank">Learn more</a>
+	  
+				<button type="button" class="btn btn-outline-success btn-sm acceptcookies" aria-label="Close">
+					I agree
+				</button>
+			</div>
+		</div>
+
+		<script src="../code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="../external.html?link=https://www.googletagmanager.com/gtag/js?id=UA-117512347-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+	
+		  gtag('config', 'UA-117512347-1');
+		</script>
+		<script src="javascripts/cookie.js"></script>
+	</body>
+
+<!-- Mirrored from kyokobot.moe/commands by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 13 Jul 2018 14:00:36 GMT -->
+</html>
